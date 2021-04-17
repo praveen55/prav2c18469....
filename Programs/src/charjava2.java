@@ -6,7 +6,7 @@ public class charjava2 {
 		String str = "Programming";
 		str = str.replace("m","");
 		str = str.trim();
-		System.out.println(str);
+		System.out.println("After Removing : " +str);
 	}
 
 }
