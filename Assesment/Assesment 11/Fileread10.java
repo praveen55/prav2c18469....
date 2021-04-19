@@ -4,13 +4,20 @@ public class Fileread10 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		File f = new File("C:\\\\Users\\\\User\\\\eclipse-workspace\\\\Sampleprogram1\\\\pkg.txt");
-
-        if (f.canRead())
-            System.out.println("Can be Read");
-        else
-            System.out.println("Cannot be Read");
-
+		try 
+		{
+		File read = new File("C:\\Users\\User\\Desktop\\programs\\pkg.txt");
+		Scanner s =new Scanner(read);
+		while(s.hasNextLine())
+		{
+			String data = s.nextLine();
+			System.out.println(data);
+		}
+		s.close();
+		}
+		catch(IOException e)
+		{
+			System.out.println("Error ");
+		}
 	}
-
 }
