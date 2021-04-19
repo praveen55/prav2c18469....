@@ -9,7 +9,7 @@ public class BufferWrite6 {
 		// TODO Auto-generated method stub
 		FileWriter myfile = new FileWriter("pkg.txt");
 		BufferedWriter buffer = new BufferedWriter(myfile);
-		buffer.write("Welcome to java point");
+		buffer.write("Welcome to all....Good Morning!!!!!!!!!");
 		buffer.close();
 		System.out.println("Success");
 	}
